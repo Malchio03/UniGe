@@ -1,9 +1,0 @@
-#include "set_dll.h"
-#include <iostream>
-using namespace std;
-
-void insert_set_dll(set_dll &s, int v) {
-    if (s == nullptr || s -> data > v) {
-        
-    }
-}
