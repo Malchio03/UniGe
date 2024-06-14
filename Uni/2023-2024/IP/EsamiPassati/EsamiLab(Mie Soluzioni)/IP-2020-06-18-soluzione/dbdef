@@ -1,0 +1,14 @@
+struct cell {
+  Record * info;
+  cell* next;
+};
+
+typedef cell*  Index;
+
+Index Index_nextof(Index);
+Index Index_new();
+Index Index_append(Index, Index);
+Index Index_assign(Index, Record*);
+
+// valore globale che rappresenta l'Index vuoto
+const static Index Index_empty = nullptr;
