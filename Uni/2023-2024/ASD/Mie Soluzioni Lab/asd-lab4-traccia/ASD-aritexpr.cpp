@@ -4,59 +4,55 @@
 #include "ASD-token.h"
 #include "ASD-stack.h"
 
-using namespace std;
 using namespace stack;
+using namespace std;
 
-int compute_arithmetic_expr(const string& st_orig) {
-    string st = st_orig; // Copia della stringa originale per evitare modifiche non volute
+/*Calcula il valore intero dell'espressione aritmetica st*/
+/*se st non corrisponde ad un expression aritmetica*/
+/*solleva un eccezione di tipo string*/
+/*con valore: "Lexical Error" se st non è composta da tokens*/
+/*e valore: "Syntactical Error" se st è ben formata*/
+int compute_arithmetic_expr(const string& st){
+	Stack pila = stack::createEmpty();
+	string ST = st;
+	string Syn = "Syntactical error";
+	Elem el, op;
+	while (nextToken(ST, el)) {// string non è vuota
+		if (el.k == 0 || el.k == 2 || el.k == 3 || el.k == 4 || el.k == 5){
 
-    Stack operandi = createEmpty(); // Stack per tenere traccia degli operandi
-    Stack operatori = createEmpty(); // Stack per tenere traccia degli operatori
+			stack::push(el,pila);  // "(","numero","+","*","-"
 
-    token tok;
-    int result = 0;
-    bool has_operand = false;
-
-    // Itera sulla stringa st per ottenere i token e valutare l'espressione
-    while (nextToken(st, tok)) {
-        // Se il token è un numero, inseriscilo nello stack degli operandi
-        if (tok.k == NUMERO) {
-            push(tok, operandi);
-            has_operand = true;
-        }
-        // Se il token è un operatore, inseriscilo nello stack degli operatori
-        else {
-            if (tok.k != PARENTESI_APERTA && tok.k != PARENTESI_CHIUSA) {
-                push(tok, operatori);
-            }
-        }
-
-        // Se ci sono almeno due operandi e un operatore, esegui il calcolo
-        if (!isEmpty(operandi) && !isEmpty(operatori)) {
-            token op = pop(operatori);
-            int operand2 = pop(operandi).val;
-            int operand1 = pop(operandi).val;
-            switch (op.k) {
-                case OP_SOMMA:
-                    push(token{operand1 + operand2, NUMERO}, operandi);
-                    break;
-                case OP_SOTTRAZIONE:
-                    push(token{operand1 - operand2, NUMERO}, operandi);
-                    break;
-                case OP_MOLTIPLICAZIONE:
-                    push(token{operand1 * operand2, NUMERO}, operandi);
-                    break;
-            }
-        }
-    }
-
-    // Se la pila degli operandi contiene un solo elemento, restituiscilo come risultato
-    if (!isEmpty(operandi) && isEmpty(operatori) && has_operand) {
-        result = pop(operandi).val;
-    } else {
-        // Altrimenti, se ci sono errori lessicali o sintattici, solleva un'eccezione
-        throw string("Syntactical Error");
-    }
-
-    return result;
+		} else if (el.k == 1) {						//")"
+			int secondo = 0;
+			int primo = 0;
+			el = stack::pop(pila);		//-1°
+			if(el.k!=2)		throw Syn; // se -1° non è un numero
+			else	secondo=el.val;
+			op = stack::pop(pila);		// -2° in op
+			el = stack::pop(pila);		// -3°
+			if (el.k!=2)		throw Syn; // se -3° non è un numero
+			else	primo=el.val;
+			el = stack::pop(pila);		// -4°
+			if(el.k !=0)		throw Syn; // se -4° non è un (
+			if(op.k != 3 && op.k!= 4 && op.k!= 5)		throw Syn; // se -2° non è +; -; *;
+			else if(op.k==3){ 	// se è un +
+				el.k = NUMERO;	// sostituisco ( con il risultato
+				el.val = primo + secondo;
+				stack::push(el,pila);
+			}
+			else if(op.k == 4){ 	//se è un -
+				el.k = NUMERO;	// sostituisco ( con il risultato
+				el.val = primo - secondo;
+				stack::push(el,pila);
+			}
+			else if(op.k == 5){ 	// se è un *
+				el.k = NUMERO;	// sostituisco ( con il risultato
+				el.val = primo * secondo;
+				stack::push(el,pila);
+			}
+		}
+	}
+	el = stack::pop(pila);
+	if(pila.size != 0 || el.k != 2)		throw Syn;
+return el.val;
 }
