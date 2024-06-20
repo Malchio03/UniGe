@@ -119,7 +119,7 @@ Error dict::insertElem(const Key k, const Value v,  Dictionary &s)
       
    }
    else{
-      aux->next=s[h(k)]->next;
+      aux->next=s[h(k)];
       s[h(k)]=aux;
    }
    return OK;
