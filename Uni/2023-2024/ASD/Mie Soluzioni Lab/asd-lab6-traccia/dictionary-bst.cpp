@@ -144,8 +144,10 @@ void print(const Dictionary& d) {
 
   if (d -> leftChild != emptyNode) {
     print(d -> leftChild);
-    cout << (d -> info).key << ": " << (d->info).value << "\n";
   }
+  
+  cout << (d -> info).key << ": " << (d->info).value << "\n";
+  
   if (d -> rightChild != emptyNode) {
     print (d -> rightChild);
   }
