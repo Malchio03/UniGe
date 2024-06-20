@@ -18,12 +18,84 @@ bool isNumber(const string& s) {
     return true;
 }
 
+
+
 /**************************************************/
 /*      funzioni da implementare                  */
 /**************************************************/
 
-
 bool nextToken(string &st, token &tok) {
+  string err = "Lexical error";
+  if (st == "") {
+    return false; 
+  }
+  string s = st.substr(0,1);   //prendo 1° carettere
+  // elimino tutti spazi iniziali
+  while(s == " "){   
+    st.erase(0,1);
+    s = st.substr(0,1);
+  }
+  if(s == "(" || s == "+" || s == "-" || s == "*") {
+    if(s == "("){
+      tok.k = PARENTESI_APERTA;
+      }
+    else if(s == "+"){
+     tok.k = OP_SOMMA;
+    }
+    else if(s == "-"){
+     tok.k = OP_SOTTRAZIONE;
+    }
+    else if(s == "*"){
+    tok.k = OP_MOLTIPLICAZIONE;
+    }
+    st.erase(0,1);
+    s = st.substr(0,1);
+    if(s != " ") throw err;
+    while(s == " ") {
+        st.erase(0,1);
+        s = st.substr(0,1);
+    }
+    return true;
+} else if(s == ")") {
+    st.erase(0,1);
+    s = st.substr(0,1);
+    if(s != " " && s != "") throw err;
+    while(s == " ") {
+        st.erase(0,1);
+        s = st.substr(0,1);
+    }
+    tok.k = PARENTESI_CHIUSA;
+    return true;
+}
+  else if(isNumber(s)) {
+    int value = 0;
+    while(s >= "0" && s <= "9") {
+        value = value * 10 + stoi(s);
+        st.erase(0,1);
+        s = st.substr(0,1);
+    }
+    if(s != " " && s != "") throw err;
+    while(s == " ") {
+        st.erase(0,1);
+        s = st.substr(0,1);
+    }
+    tok.k = NUMERO;
+    tok.val = value;
+    return true;
+}
+  throw err; //non è un token: (; ); Numero; operazioni
+}
+
+
+
+
+
+
+
+
+                            // alternativa
+
+/*bool nextToken(string &st, token &tok) {
     // Elimina gli spazi all'inizio
     while (!st.empty() && st[0] == ' ') {
         st.erase(0, 1);
@@ -71,5 +143,5 @@ bool nextToken(string &st, token &tok) {
     else {
         throw string("Errore: Token non riconosciuto");
     }
-}
+}*/
 
