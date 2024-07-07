@@ -1,8 +1,6 @@
  <p align="center">
     <img src="logo_uni_genova.png" height="35">
-</p>
-
-# Unige - 2023-2024 (Laurea triennale)
+</p> # Unige - 2023-2024 (Laurea triennale)
 
 
 **Italiano:** <br>
