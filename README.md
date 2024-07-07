@@ -1,5 +1,5 @@
  <p align="center">
-    <img src="logo_uni_genova.png" height="35">
+    <img src="logo_uni_genova.png" height="35" align = "center">
 </p> # Unige - 2023-2024 (Laurea triennale)
 
 
