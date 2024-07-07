@@ -1,6 +1,6 @@
 # <img src="logo.png" height=24>&nbsp; UniGe Informatica (triennale)
 
-Unige - https://unige.it/en  <br>
+Unige Sito - https://unige.it/en  <br>
 Manifesto Degli Studi - https://servizionline.unige.it/unige/stampa_manifesto/MF/2023/8759.html <br>
 Pagina Corso - https://corsi.unige.it/corsi/8759  <br>
 Insegnamenti - https://corsi.unige.it/corsi/8759/insegnamenti/  <br>
