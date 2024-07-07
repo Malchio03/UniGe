@@ -1,4 +1,4 @@
-# <p align="center">
+ <p align="center">
     <img src="logo_uni_genova.png" height="35">
 </p>
 
