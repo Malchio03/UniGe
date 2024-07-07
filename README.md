@@ -7,7 +7,7 @@ Insegnamenti - https://corsi.unige.it/corsi/8759/insegnamenti/  <br>
 
 <hr>
 
-**Italiano:** <br>
+## **Italiano:** <br>
 Benvenuti nella mia repository dedicata alla programmazione universitaria presso l'Università di Genova! Qui troverete una raccolta di esami passati e materiali di esercizio per affrontare al meglio gli argomenti trattati nei corsi della laurea triennale. Questa repository contiene una serie di esercizi e librerie utili per consolidare le vostre competenze nel campo della programmazione. Spero che questi materiali vi aiutino nel vostro percorso accademico e nello sviluppo delle vostre abilità di programmazione.
 
 **Inglese:** <br>
