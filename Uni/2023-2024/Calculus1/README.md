@@ -39,4 +39,4 @@ ho trovato utile questi video:
 3) A.Alvino, L.Carbone, G.trombetti, Esercitazioni di matematica volume 1 (utile per limiti e derivate)
 
 
-Grazie per il tuo contributo e buon studio!
+ Grazie per il tuo contributo e buon studio!
