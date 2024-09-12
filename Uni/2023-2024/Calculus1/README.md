@@ -21,7 +21,7 @@ ho trovato utile questi video:
 4) https://www.youtube.com/watch?v=6-jor1pLI6E&list=LL&index=109&t=386s
 
  
-**Studio di funzione** 
+ **Studio di funzione** 
 
 1) https://www.youtube.com/watch?v=VUtwUhexrJo&list=LL&index=18
 
@@ -30,7 +30,7 @@ ho trovato utile questi video:
 3) https://www.youtube.com/watch?v=0Lms-GWkGfo&list=PLM2bJXldTzczstAZSfrZC4et_iIUi1TDd
 
 
-📚 Libri consigliati
+## 📚 Libri consigliati
 
 1) Liliana Curcio, Jacopo De Tullio, Analisi Matematica 1.
 
