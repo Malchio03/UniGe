@@ -3,7 +3,7 @@
 Benvenuti nel repository dedicato ad ADC, qui troverete tutti esercizi, appunti ed esami passati.
 
 ### Struttura della Cartella
--**Consegne**: Consegne assegnate durante l'anno.
+-**Consegne**: Consegne assegnate durante l'anno. <br>
 -**Miei appunti**: Appunti presi durante l'anno.
 
 ### Come Utilizzare le Soluzioni
