@@ -1,6 +1,6 @@
 ## Cartella LPO
 
-Benvenuti nella cartella dedicata alla materia SETI
+Benvenuti nella cartella dedicata alla materia LPO
 
 ### Struttura della Cartella
 
