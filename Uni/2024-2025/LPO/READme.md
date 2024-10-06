@@ -13,7 +13,6 @@ Troverete diverse cartelle, al loro interno sono presenti: appunti, esami e solu
 
 
 ### IMPORTANTE
-non si trovano appunti di algebra e logica in quanto il materiale fornito dai professori è più che sufficiente e non ha necessità di avere appunti aggiuntivi. 
-Il mio consiglio è quello di rifare tutti gli esami presenti su aulaweb per superare questi esami.
+Controllare nome di ciascun file/cartella...gitHub non mette tutto in ordine quindi alcuni appunti recenti risultano più in basso o viceversa
 
 Grazie per il tuo contributo e buon studio!
