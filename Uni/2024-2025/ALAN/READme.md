@@ -10,7 +10,7 @@ Troverete diverse cartelle, al loro interno sono presenti: appunti, esami e solu
 ### Note
 
 - Assicurati di verificare le soluzioni,appunti e materiale delle varie materie e segnalare eventuali errori o incongruenze aprendo una issue.
-- Queste cartelle sono fornite a scopo educativo e dovrebbero essere utilizzate come riferimento per migliorare la comprensione della materia.
+- Queste cartelle sono fornite a scopo educativo e dovrebbero essere utilizzate come riferimento per migliorare la comprensione della materia. 
 
 Grazie per il tuo contributo e buon studio!
 
