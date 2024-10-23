@@ -13,6 +13,8 @@ Troverete diverse cartelle, al loro interno sono presenti: appunti, esami e solu
 
 
 ### IMPORTANTE
-Controllare nome di ciascun file/cartella...gitHub non mette tutto in ordine quindi alcuni appunti recenti risultano più in basso o viceversa
+Controllare nome di ciascun file/cartella...gitHub non mette tutto in ordine quindi alcuni appunti recenti risultano più in basso o viceversa.
+Per appunti completi visualizzare la cartella "Appunti completi" rispetto a "appunti lezione"
+
 
 Grazie per il tuo contributo e buon studio!
