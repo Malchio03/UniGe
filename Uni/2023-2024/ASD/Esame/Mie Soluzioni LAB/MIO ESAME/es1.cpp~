@@ -1,0 +1,9 @@
+#include "priority-circ.h"
+
+//Es 1
+//Ritorna il numero di elementi (positivi) nella coda
+unsigned int nbElem(const list& li){
+  return 0;
+}
+
+

@@ -1,0 +1,37 @@
+#include <string>
+#include <cstddef>
+
+struct dllCell {
+  std::string val;
+  dllCell *next2;
+  dllCell *prev2;
+};
+
+struct cell{
+  int priority;
+  dllCell* queue;
+  cell *next;
+};
+
+typedef dllCell *dll;
+typedef cell *list;
+
+const list emptyList=nullptr;
+
+/*************************************************/
+/* Funzione da implementare                      */
+/*************************************************/
+
+//Es 1
+//Ritorna il numero di elementi (positivi) nella coda
+unsigned int nbElem(const list&);
+
+//Es 2
+//Inserisce una string con priorita' nella coda
+//Se la string da inserire e' uguale a "" non fa nulla
+void insertElem(list&,std::string,int);
+
+//Es 3
+//Ritorna l'elemeto piu' vecchio con la priorita'ì piu' bassa della coda
+//Se la coda e' vuota, ritora la string vuota ""
+std::string removeFirst(list&);
