@@ -1,0 +1,10 @@
+#include "intpair-bst.h"
+
+/*************************************************/
+/* Funzione da implementare                      */
+/*************************************************/
+//Es 1
+//Ritorna il numero di coppie nel albero
+unsigned int nbPairs(const pairBstTree& pbst){
+  return 0;
+}

@@ -1,0 +1,12 @@
+#include "intpair-bst.h"
+
+/*************************************************/
+/* Funzione da implementare                      */
+/*************************************************/
+//Es 3
+//Ritorna la coppia piu' piccola dell'albero
+//Se l'albero e' vuoto, ritorna noPair
+intpair minPair(const pairBstTree& pbst){
+  return noPair;
+}
+
