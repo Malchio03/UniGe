@@ -1,0 +1,92 @@
+<mxfile host="65bd71144e">
+    <diagram id="M3EAMZalhh-nbmIwbzxO" name="Page-1">
+        <mxGraphModel dx="1477" dy="842" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.browserWindow;rSize=0;strokeColor2=#008cff;strokeColor3=#c4c4c4;mainText=,;recursiveResize=0;" parent="1" vertex="1">
+                    <mxGeometry y="30" width="550" height="410" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Login" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.anchor;fontSize=17;fontColor=#666666;align=left;whiteSpace=wrap;" parent="2" vertex="1">
+                    <mxGeometry x="60" y="12" width="110" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="https://www.StreamEveryThing.com" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.anchor;rSize=0;fontSize=17;fontColor=#666666;align=left;" parent="2" vertex="1">
+                    <mxGeometry x="130" y="60" width="300" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;rSize=0;fillColor=#4D4D4D;strokeColor=#FFFFFF;fontColor=#FFFFFF;" parent="2" vertex="1">
+                    <mxGeometry x="20" y="120" width="510" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="Sign In" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=12;fontColor=#FFFFFF;align=left;resizeWidth=1;spacingLeft=0;" parent="30" vertex="1">
+                    <mxGeometry width="255" height="20" relative="1" as="geometry">
+                        <mxPoint x="221" y="10" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="32" value="" style="shape=line;strokeColor=#ddeeff;strokeWidth=2;html=1;resizeWidth=1;" parent="30" vertex="1">
+                    <mxGeometry width="458.99999999999994" height="10" relative="1" as="geometry">
+                        <mxPoint x="22" y="30" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="33" value="Email:" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=12;fontColor=#FFFFFF;align=left;resizeWidth=1;spacingLeft=0;" parent="30" vertex="1">
+                    <mxGeometry width="255" height="20" relative="1" as="geometry">
+                        <mxPoint x="20" y="40" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="34" value="Pippo@gmail.com" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;rSize=0;strokeColor=#999999;fontColor=#666666;align=left;spacingLeft=5;resizeWidth=1;" parent="30" vertex="1">
+                    <mxGeometry width="215.76923076923077" height="25" relative="1" as="geometry">
+                        <mxPoint x="22" y="60" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="35" value="&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;Password:&lt;/font&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=12;fontColor=#666666;align=left;resizeWidth=1;spacingLeft=0;" parent="30" vertex="1">
+                    <mxGeometry width="255" height="20" relative="1" as="geometry">
+                        <mxPoint x="246" y="40" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="36" value="********" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;rSize=0;strokeColor=#999999;fontColor=#666666;align=left;spacingLeft=5;resizeWidth=1;" parent="30" vertex="1">
+                    <mxGeometry width="235.3846153846154" height="25" relative="1" as="geometry">
+                        <mxPoint x="246" y="60" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="37" value="LOG IN" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;rSize=5;strokeColor=#006666;fontColor=#ffffff;fillColor=#009999;fontSize=16;fontStyle=1;" parent="30" vertex="1">
+                    <mxGeometry y="1" width="80" height="30" relative="1" as="geometry">
+                        <mxPoint x="195" y="-180" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="38" value="Password Dimenticata?" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=12;fontColor=#9999ff;align=left;spacingLeft=0;fontStyle=4;resizeWidth=1;" parent="30" vertex="1">
+                    <mxGeometry y="1" width="382.5" height="20" relative="1" as="geometry">
+                        <mxPoint x="370" y="-190" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="39" value="" style="shape=line;strokeColor=#ddeeff;strokeWidth=2;html=1;resizeWidth=1;" parent="30" vertex="1">
+                    <mxGeometry y="1" width="458.99999999999994" height="10" relative="1" as="geometry">
+                        <mxPoint x="22" y="-80" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="40" value="&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;Nuovo Utente?&lt;/font&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=12;fontColor=#666666;align=left;spacingLeft=0;resizeWidth=1;" parent="30" vertex="1">
+                    <mxGeometry y="1" width="382.5" height="20" relative="1" as="geometry">
+                        <mxPoint x="193" y="-70" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="41" value="SIGN UP" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;rSize=5;strokeColor=#006666;fontColor=#ffffff;fillColor=#009999;fontSize=16;fontStyle=1;" parent="30" vertex="1">
+                    <mxGeometry y="1" width="80" height="30" relative="1" as="geometry">
+                        <mxPoint x="193" y="-50" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="42" value="LOG IN CON GOOGLE" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;rSize=5;strokeColor=#6F0000;fillColor=#a20025;fontSize=16;fontStyle=1;fontColor=#ffffff;" parent="30" vertex="1">
+                    <mxGeometry y="1" width="190" height="30" relative="1" as="geometry">
+                        <mxPoint x="24" y="-130" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="43" value="LOG IN CON FACEBOOK" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;rSize=5;strokeColor=#001DBC;fontColor=#ffffff;fillColor=#0050ef;fontSize=16;fontStyle=1;" parent="30" vertex="1">
+                    <mxGeometry y="1" width="210" height="30" relative="1" as="geometry">
+                        <mxPoint x="255" y="-130" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="44" value="&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;or&lt;/font&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=12;fontColor=#666666;align=left;resizeWidth=1;spacingLeft=0;" parent="30" vertex="1">
+                    <mxGeometry width="255" height="20" relative="1" as="geometry">
+                        <mxPoint x="228" y="160" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
