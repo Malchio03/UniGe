@@ -5,6 +5,7 @@ Benvenuti nella cartella dedicata alla materia LPO
 ### Struttura della Cartella
 
 Troverete diverse cartelle, al loro interno sono presenti: appunti, esami e soluzioni esercizi/esami.
+Rispetto ad altri corsi non è super completo, per prepararmi all'esame ho fatto tutti gli esami passati presenti su aulaweb.
 
 ### Note
 
