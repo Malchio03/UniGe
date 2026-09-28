@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace, 'Courier New', Courier;
+}
+body{
+    display:flex;
+    justify-content: center; /*centra orrizontalmente tutto ciò che c'è dentro il body*/
+    align-items: center;
+    min-height: 100vh; /*imposta l'altezza minima del body pari a 100%*/
+    background-color: #0a3c2f;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px; /*gap tra titolo e il bottone*/
+    background-color: #0d614b;
+    padding: 40px 60px;
+}
+h2{
+    font-size: 3em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+.reset{
+    padding: 15px 20px;
+    color: #267c65;
+    background-color: #fff;
+    border: none;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600; /*grassetto*/
+}
+.reset:active {
+    color: #fff;
+    background-color: #267c65;
+  }  
+.game{
+    width: 440px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap; /*serve per andare a capo quando la riga è piena*/
+    gap: 10px; /*spazio tra una carta e l'altra*/
+    transform-style: preserve-3d; /*serve per permettere alle carte (che sono figli di .game) di ruotare nello spazio tridimensionale*/
+    perspective: 500px; /*effetto 3D*/
+}
+.item{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    background-color: #fff;
+    transform: rotateY(180deg);
+    transition: 0.25s;
+}
+.item.boxOpen{
+    transform: rotateY(0deg);
+}
+.item::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: #209d7b;
+    /*opacity: 0.85;*/ 
+    transition: 0.25s;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+}
+.boxOpen:after{
+    transform: rotateY(180deg);
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Calculator</title>
+  <style>
+    body {
+      background-color: lightpink;
+    }
+
+    .container {
+      background-color: plum;
+      text-align: center;
+      width: 50%;
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 50px;
+      border: solid 2px navy;
+      border-radius: 10%;
+    }
+
+    .btn {
+      background-color: lightcyan;
+      padding: 10px;
+      font-size: 20pt;
+      font-weight: bold;
+      border-radius: 10%;
+      margin: 5px;
+    }
+
+    input[type="number"] {
+      font-size: 16pt;
+      margin: 5px;
+      padding: 5px;
+      width: 100px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <form id="valori">
+      <input type="number" id="valore1" name="valore1" placeholder="val1">
+      <input type="number" id="valore2" name="valore2" placeholder="val2">
+      <br><br>
+      <input type="button" id="sum" value="+" class="btn">
+      <input type="button" id="sub" value="-" class="btn">
+      <input type="button" id="mult" value="*" class="btn">
+      <input type="button" id="divi" value="/" class="btn">
+      <br><br>
+      <input type="text" id="res" name="res" placeholder="risultato" readonly>
+    </form>
+  </div>
+
+  <script>
+    // Funzione per leggere i valori
+    function getValues() {
+      let a = parseFloat(document.getElementById("valore1").value);
+      let b = parseFloat(document.getElementById("valore2").value);
+      return [a, b];
+    }
+
+    // Somma
+    document.getElementById("sum").addEventListener("click", () => {
+      let [a, b] = getValues();
+      document.getElementById("res").value = a + b;
+    });
+
+    // Sottrazione
+    document.getElementById("sub").addEventListener("click", () => {
+      let [a, b] = getValues();
+      document.getElementById("res").value = a - b;
+    });
+
+    // Moltiplicazione
+    document.getElementById("mult").addEventListener("click", () => {
+      let [a, b] = getValues();
+      document.getElementById("res").value = a * b;
+    });
+
+    // Divisione
+    document.getElementById("divi").addEventListener("click", () => {
+      let [a, b] = getValues();
+      if (b === 0) {
+        document.getElementById("res").value = "Errore: div/0";
+      } else {
+        document.getElementById("res").value = a / b;
+      }
+    });
+  </script>
+
+</body>
+</html>

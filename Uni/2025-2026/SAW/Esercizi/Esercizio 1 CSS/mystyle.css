@@ -1,0 +1,26 @@
+/*valori a caso giusto per provare*/
+.foto {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.unicorno {
+    border: 2px solid #cb22af;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* all'inizio sta sotto */
+}
+
+.drago {
+    border: 2px solid #4ba299;
+    position: absolute;
+    top: 30px;      /*valore a caso per imitare immagine di aulaweb*/
+    left: 60px;     /*valore a caso per imitare immagine di aulaweb*/
+    z-index: 10; /* all'inizio sta sopra*/
+}
+
+.foto:hover .drago {
+    z-index: 0; /* in questo modo swappo le immagini*/
+}

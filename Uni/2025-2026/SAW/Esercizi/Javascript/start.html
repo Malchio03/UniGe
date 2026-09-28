@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="utf-8">
+        <title>Calcolatrice</title>
+        <style>
+            body {
+                background-color: floralwhite;
+            }
+
+            .btn {
+                background-color: lightcyan;
+                padding: 10px;
+                font-size: 20pt;
+                font-weight: bold; 
+                border-radius: 10%;    
+            }
+
+            /* CHAT GPT */
+            .container {
+                width: 100%;
+                text-align: center; /* Centra orizzontalmente */
+                margin-top: 200px; /* Sposta verticalmente a piacere */
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <input type="button" id="bottone" value="apri calcolatrice" class="btn"> 
+        </div>
+
+        <script>
+            bottone.addEventListener("click", () => {
+            let finestra = window.open(
+                "calculator.html",
+                "Calcolatrice",
+                "width=400, height=250, top=150, left=450, resizable=no,scrollbars=no,status=no,popup=true"
+            );
+        })
+        </script>
+    </body>
+</html>

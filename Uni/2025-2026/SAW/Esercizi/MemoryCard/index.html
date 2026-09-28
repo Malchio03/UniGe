@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <title>Memory Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Memory Game</h2>
+        <div class="game"></div>
+        <button class="reset">Reset Game</button>
+    </div>
+<script>
+    const tilesContainer = document.querySelector(".game");
+    const resetButton = document.querySelector(".reset");
+
+    const baseEmojis = ['🍎','🍌','🍒','🍇','🍓','🍑','🥝','🍍'];
+    let emojis = [...baseEmojis, ...baseEmojis]; // 16 tessere = 8 coppie
+    // Il simbolo ... (spread operator) serve semplicemente per "aprire" gli elementi dell’array e copiarli dentro un nuovo array.
+    // in sostanza fa una sorta di concatenazione
+    
+    function startGame() {
+      // svuota il contenitore
+      tilesContainer.innerHTML = "";
+      
+      // mescola le emoji
+      emojis.sort(() => Math.random() - 0.5);
+
+      // crea le tessere
+      for (let i = 0; i < emojis.length; i++) {
+        const box = document.createElement('div'); // crea un nuovo elemento <div>
+        box.className = 'item';                    // gli dà la classe "item" per lo stile CSS
+        box.innerHTML = emojis[i];                 // mette l'emoji dentro il div
+
+        box.onclick = function() { // serve per poter girare la carta
+            this.classList.add('boxOpen');
+        }
+        tilesContainer.appendChild(box);           // lo aggiunge dentro .game
+        }
+    }
+
+    // evento reset
+    resetButton.addEventListener("click", startGame);
+
+    startGame();
+
+
+</script>
+</body>
+</html>
